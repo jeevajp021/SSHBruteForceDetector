@@ -1,0 +1,11 @@
+Name            : Jeeva J P
+Roll Number     : 727823TUCY018
+Project Name    : SSH Brute-Force Detector
+Project Category: Network Security / Log Analysis
+GitHub URL      : https://github.com/jeevaJP/hacker-skct-727823TUCY018
+Total Commits   : 7+ (spread across at least 3 days)
+Tools Used      : Python 3.x, reportlab, VirtualBox, Kali Linux, Metasploitable2,
+                  re / json / collections (stdlib), SSH (OpenSSH)
+Tool Summary    : Analyses Linux auth.log files using a sliding-window algorithm to
+                  detect SSH brute-force attacks and user-enumeration scans, raising
+                  HIGH/MEDIUM severity alerts with JSON/CSV/HTML export.

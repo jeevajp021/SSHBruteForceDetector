@@ -1,0 +1,238 @@
+{
+  "summary": {
+    "roll_number": "727823TUCY018",
+    "timestamp": "2026-03-29T18:38:33.493973",
+    "total_events": 32,
+    "unique_attacker_ips": 4,
+    "alerts_raised": 4,
+    "legitimate_logins": 0
+  },
+  "alerts": [
+    {
+      "alert_type": "BRUTE_FORCE_FAILED_PASSWORD",
+      "ip": "203.0.113.10",
+      "count": 8,
+      "window_secs": 60,
+      "first_seen": "2026-03-28 15:00:00",
+      "severity": "MEDIUM"
+    },
+    {
+      "alert_type": "BRUTE_FORCE_FAILED_PASSWORD",
+      "ip": "203.0.113.11",
+      "count": 8,
+      "window_secs": 60,
+      "first_seen": "2026-03-28 15:00:01",
+      "severity": "MEDIUM"
+    },
+    {
+      "alert_type": "BRUTE_FORCE_FAILED_PASSWORD",
+      "ip": "203.0.113.12",
+      "count": 8,
+      "window_secs": 60,
+      "first_seen": "2026-03-28 15:00:02",
+      "severity": "MEDIUM"
+    },
+    {
+      "alert_type": "BRUTE_FORCE_FAILED_PASSWORD",
+      "ip": "203.0.113.13",
+      "count": 8,
+      "window_secs": 60,
+      "first_seen": "2026-03-28 15:00:03",
+      "severity": "MEDIUM"
+    }
+  ],
+  "events": [
+    {
+      "type": "FAILED",
+      "ip": "203.0.113.10",
+      "user": "root",
+      "ts": "2026-03-28 15:00:00"
+    },
+    {
+      "type": "FAILED",
+      "ip": "203.0.113.11",
+      "user": "root",
+      "ts": "2026-03-28 15:00:01"
+    },
+    {
+      "type": "FAILED",
+      "ip": "203.0.113.12",
+      "user": "root",
+      "ts": "2026-03-28 15:00:02"
+    },
+    {
+      "type": "FAILED",
+      "ip": "203.0.113.13",
+      "user": "root",
+      "ts": "2026-03-28 15:00:03"
+    },
+    {
+      "type": "FAILED",
+      "ip": "203.0.113.10",
+      "user": "root",
+      "ts": "2026-03-28 15:00:05"
+    },
+    {
+      "type": "FAILED",
+      "ip": "203.0.113.11",
+      "user": "root",
+      "ts": "2026-03-28 15:00:06"
+    },
+    {
+      "type": "FAILED",
+      "ip": "203.0.113.12",
+      "user": "root",
+      "ts": "2026-03-28 15:00:07"
+    },
+    {
+      "type": "FAILED",
+      "ip": "203.0.113.13",
+      "user": "root",
+      "ts": "2026-03-28 15:00:08"
+    },
+    {
+      "type": "FAILED",
+      "ip": "203.0.113.10",
+      "user": "root",
+      "ts": "2026-03-28 15:00:10"
+    },
+    {
+      "type": "FAILED",
+      "ip": "203.0.113.11",
+      "user": "root",
+      "ts": "2026-03-28 15:00:11"
+    },
+    {
+      "type": "FAILED",
+      "ip": "203.0.113.12",
+      "user": "root",
+      "ts": "2026-03-28 15:00:12"
+    },
+    {
+      "type": "FAILED",
+      "ip": "203.0.113.13",
+      "user": "root",
+      "ts": "2026-03-28 15:00:13"
+    },
+    {
+      "type": "FAILED",
+      "ip": "203.0.113.10",
+      "user": "root",
+      "ts": "2026-03-28 15:00:15"
+    },
+    {
+      "type": "FAILED",
+      "ip": "203.0.113.11",
+      "user": "root",
+      "ts": "2026-03-28 15:00:16"
+    },
+    {
+      "type": "FAILED",
+      "ip": "203.0.113.12",
+      "user": "root",
+      "ts": "2026-03-28 15:00:17"
+    },
+    {
+      "type": "FAILED",
+      "ip": "203.0.113.13",
+      "user": "root",
+      "ts": "2026-03-28 15:00:18"
+    },
+    {
+      "type": "FAILED",
+      "ip": "203.0.113.10",
+      "user": "root",
+      "ts": "2026-03-28 15:00:20"
+    },
+    {
+      "type": "FAILED",
+      "ip": "203.0.113.11",
+      "user": "root",
+      "ts": "2026-03-28 15:00:21"
+    },
+    {
+      "type": "FAILED",
+      "ip": "203.0.113.12",
+      "user": "root",
+      "ts": "2026-03-28 15:00:22"
+    },
+    {
+      "type": "FAILED",
+      "ip": "203.0.113.13",
+      "user": "root",
+      "ts": "2026-03-28 15:00:23"
+    },
+    {
+      "type": "FAILED",
+      "ip": "203.0.113.10",
+      "user": "root",
+      "ts": "2026-03-28 15:00:25"
+    },
+    {
+      "type": "FAILED",
+      "ip": "203.0.113.11",
+      "user": "root",
+      "ts": "2026-03-28 15:00:26"
+    },
+    {
+      "type": "FAILED",
+      "ip": "203.0.113.12",
+      "user": "root",
+      "ts": "2026-03-28 15:00:27"
+    },
+    {
+      "type": "FAILED",
+      "ip": "203.0.113.13",
+      "user": "root",
+      "ts": "2026-03-28 15:00:28"
+    },
+    {
+      "type": "FAILED",
+      "ip": "203.0.113.10",
+      "user": "root",
+      "ts": "2026-03-28 15:00:30"
+    },
+    {
+      "type": "FAILED",
+      "ip": "203.0.113.11",
+      "user": "root",
+      "ts": "2026-03-28 15:00:31"
+    },
+    {
+      "type": "FAILED",
+      "ip": "203.0.113.12",
+      "user": "root",
+      "ts": "2026-03-28 15:00:32"
+    },
+    {
+      "type": "FAILED",
+      "ip": "203.0.113.13",
+      "user": "root",
+      "ts": "2026-03-28 15:00:33"
+    },
+    {
+      "type": "FAILED",
+      "ip": "203.0.113.10",
+      "user": "root",
+      "ts": "2026-03-28 15:00:35"
+    },
+    {
+      "type": "FAILED",
+      "ip": "203.0.113.11",
+      "user": "root",
+      "ts": "2026-03-28 15:00:36"
+    },
+    {
+      "type": "FAILED",
+      "ip": "203.0.113.12",
+      "user": "root",
+      "ts": "2026-03-28 15:00:37"
+    },
+    {
+      "type": "FAILED",
+      "ip": "203.0.113.13",
+      "user": "root",
+      "ts": "2026-03-28 15:00:38"
+    }
+  ]
+}

@@ -1,0 +1,129 @@
+{
+  "roll_number": "727823TUCY018",
+  "generated": "2026-03-29 18:38:33",
+  "results": [
+    {
+      "test_case": "TC1 \u2014 Classic Brute Force",
+      "log_file": "outputs/logs/tc1_brute_force.log",
+      "expected": "BRUTE_FORCE_FAILED_PASSWORD alert for 192.168.1.100",
+      "alerts_found": 1,
+      "alerts": [
+        {
+          "alert_type": "BRUTE_FORCE_FAILED_PASSWORD",
+          "ip": "192.168.1.100",
+          "count": 12,
+          "window_secs": 60,
+          "first_seen": "2026-03-28 10:00:00",
+          "severity": "HIGH"
+        }
+      ],
+      "summary": {
+        "roll_number": "727823TUCY018",
+        "timestamp": "2026-03-29T18:38:33.492497",
+        "total_events": 12,
+        "unique_attacker_ips": 1,
+        "alerts_raised": 1,
+        "legitimate_logins": 0
+      }
+    },
+    {
+      "test_case": "TC2 \u2014 User Enumeration",
+      "log_file": "outputs/logs/tc2_user_enum.log",
+      "expected": "USER_ENUMERATION alert for 10.0.0.55",
+      "alerts_found": 1,
+      "alerts": [
+        {
+          "alert_type": "USER_ENUMERATION",
+          "ip": "10.0.0.55",
+          "attempt_count": 11,
+          "unique_users": [
+            "ubuntu",
+            "pi",
+            "test",
+            "ftp",
+            "nagios",
+            "admin",
+            "postgres",
+            "oracle",
+            "guest",
+            "root",
+            "hadoop"
+          ],
+          "first_seen": "2026-03-28 11:00:00",
+          "severity": "HIGH"
+        }
+      ],
+      "summary": {
+        "roll_number": "727823TUCY018",
+        "timestamp": "2026-03-29T18:38:33.493192",
+        "total_events": 11,
+        "unique_attacker_ips": 1,
+        "alerts_raised": 1,
+        "legitimate_logins": 0
+      }
+    },
+    {
+      "test_case": "TC3 \u2014 Benign Mistype (No Alert)",
+      "log_file": "outputs/logs/tc3_benign.log",
+      "expected": "No alerts (below threshold)",
+      "alerts_found": 0,
+      "alerts": [],
+      "summary": {
+        "roll_number": "727823TUCY018",
+        "timestamp": "2026-03-29T18:38:33.493479",
+        "total_events": 2,
+        "unique_attacker_ips": 1,
+        "alerts_raised": 0,
+        "legitimate_logins": 1
+      }
+    },
+    {
+      "test_case": "TC4 \u2014 Distributed Attack",
+      "log_file": "outputs/logs/tc4_distributed.log",
+      "expected": "Multiple MEDIUM alerts across 4 IPs",
+      "alerts_found": 4,
+      "alerts": [
+        {
+          "alert_type": "BRUTE_FORCE_FAILED_PASSWORD",
+          "ip": "203.0.113.10",
+          "count": 8,
+          "window_secs": 60,
+          "first_seen": "2026-03-28 15:00:00",
+          "severity": "MEDIUM"
+        },
+        {
+          "alert_type": "BRUTE_FORCE_FAILED_PASSWORD",
+          "ip": "203.0.113.11",
+          "count": 8,
+          "window_secs": 60,
+          "first_seen": "2026-03-28 15:00:01",
+          "severity": "MEDIUM"
+        },
+        {
+          "alert_type": "BRUTE_FORCE_FAILED_PASSWORD",
+          "ip": "203.0.113.12",
+          "count": 8,
+          "window_secs": 60,
+          "first_seen": "2026-03-28 15:00:02",
+          "severity": "MEDIUM"
+        },
+        {
+          "alert_type": "BRUTE_FORCE_FAILED_PASSWORD",
+          "ip": "203.0.113.13",
+          "count": 8,
+          "window_secs": 60,
+          "first_seen": "2026-03-28 15:00:03",
+          "severity": "MEDIUM"
+        }
+      ],
+      "summary": {
+        "roll_number": "727823TUCY018",
+        "timestamp": "2026-03-29T18:38:33.494731",
+        "total_events": 32,
+        "unique_attacker_ips": 4,
+        "alerts_raised": 4,
+        "legitimate_logins": 0
+      }
+    }
+  ]
+}

@@ -1,0 +1,100 @@
+{
+  "summary": {
+    "roll_number": "727823TUCY018",
+    "timestamp": "2026-03-29T18:38:33.492895",
+    "total_events": 11,
+    "unique_attacker_ips": 1,
+    "alerts_raised": 1,
+    "legitimate_logins": 0
+  },
+  "alerts": [
+    {
+      "alert_type": "USER_ENUMERATION",
+      "ip": "10.0.0.55",
+      "attempt_count": 11,
+      "unique_users": [
+        "ubuntu",
+        "pi",
+        "test",
+        "ftp",
+        "nagios",
+        "admin",
+        "postgres",
+        "oracle",
+        "guest",
+        "root",
+        "hadoop"
+      ],
+      "first_seen": "2026-03-28 11:00:00",
+      "severity": "HIGH"
+    }
+  ],
+  "events": [
+    {
+      "type": "INVALID_USER",
+      "ip": "10.0.0.55",
+      "user": "admin",
+      "ts": "2026-03-28 11:00:00"
+    },
+    {
+      "type": "INVALID_USER",
+      "ip": "10.0.0.55",
+      "user": "root",
+      "ts": "2026-03-28 11:00:03"
+    },
+    {
+      "type": "INVALID_USER",
+      "ip": "10.0.0.55",
+      "user": "test",
+      "ts": "2026-03-28 11:00:06"
+    },
+    {
+      "type": "INVALID_USER",
+      "ip": "10.0.0.55",
+      "user": "oracle",
+      "ts": "2026-03-28 11:00:09"
+    },
+    {
+      "type": "INVALID_USER",
+      "ip": "10.0.0.55",
+      "user": "postgres",
+      "ts": "2026-03-28 11:00:12"
+    },
+    {
+      "type": "INVALID_USER",
+      "ip": "10.0.0.55",
+      "user": "ftp",
+      "ts": "2026-03-28 11:00:15"
+    },
+    {
+      "type": "INVALID_USER",
+      "ip": "10.0.0.55",
+      "user": "guest",
+      "ts": "2026-03-28 11:00:18"
+    },
+    {
+      "type": "INVALID_USER",
+      "ip": "10.0.0.55",
+      "user": "ubuntu",
+      "ts": "2026-03-28 11:00:21"
+    },
+    {
+      "type": "INVALID_USER",
+      "ip": "10.0.0.55",
+      "user": "pi",
+      "ts": "2026-03-28 11:00:24"
+    },
+    {
+      "type": "INVALID_USER",
+      "ip": "10.0.0.55",
+      "user": "nagios",
+      "ts": "2026-03-28 11:00:27"
+    },
+    {
+      "type": "INVALID_USER",
+      "ip": "10.0.0.55",
+      "user": "hadoop",
+      "ts": "2026-03-28 11:00:30"
+    }
+  ]
+}

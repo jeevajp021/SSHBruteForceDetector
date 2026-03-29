@@ -1,0 +1,86 @@
+{
+  "roll_number": "727823TUCY018",
+  "timestamp": "2026-03-29T18:39:13.366703",
+  "test_cases_run": 4,
+  "total_log_events": 57,
+  "total_alerts": 6,
+  "legitimate_logins": 1,
+  "severity_counts": {
+    "HIGH": 2,
+    "MEDIUM": 4
+  },
+  "type_counts": {
+    "BRUTE_FORCE_FAILED_PASSWORD": 5,
+    "USER_ENUMERATION": 1
+  },
+  "unique_attacker_ips": [
+    "10.0.0.55",
+    "203.0.113.11",
+    "192.168.1.100",
+    "203.0.113.13",
+    "203.0.113.12",
+    "203.0.113.10"
+  ],
+  "all_alerts": [
+    {
+      "alert_type": "BRUTE_FORCE_FAILED_PASSWORD",
+      "ip": "192.168.1.100",
+      "count": 12,
+      "window_secs": 60,
+      "first_seen": "2026-03-28 10:00:00",
+      "severity": "HIGH"
+    },
+    {
+      "alert_type": "USER_ENUMERATION",
+      "ip": "10.0.0.55",
+      "attempt_count": 11,
+      "unique_users": [
+        "ubuntu",
+        "pi",
+        "test",
+        "ftp",
+        "nagios",
+        "admin",
+        "postgres",
+        "oracle",
+        "guest",
+        "root",
+        "hadoop"
+      ],
+      "first_seen": "2026-03-28 11:00:00",
+      "severity": "HIGH"
+    },
+    {
+      "alert_type": "BRUTE_FORCE_FAILED_PASSWORD",
+      "ip": "203.0.113.10",
+      "count": 8,
+      "window_secs": 60,
+      "first_seen": "2026-03-28 15:00:00",
+      "severity": "MEDIUM"
+    },
+    {
+      "alert_type": "BRUTE_FORCE_FAILED_PASSWORD",
+      "ip": "203.0.113.11",
+      "count": 8,
+      "window_secs": 60,
+      "first_seen": "2026-03-28 15:00:01",
+      "severity": "MEDIUM"
+    },
+    {
+      "alert_type": "BRUTE_FORCE_FAILED_PASSWORD",
+      "ip": "203.0.113.12",
+      "count": 8,
+      "window_secs": 60,
+      "first_seen": "2026-03-28 15:00:02",
+      "severity": "MEDIUM"
+    },
+    {
+      "alert_type": "BRUTE_FORCE_FAILED_PASSWORD",
+      "ip": "203.0.113.13",
+      "count": 8,
+      "window_secs": 60,
+      "first_seen": "2026-03-28 15:00:03",
+      "severity": "MEDIUM"
+    }
+  ]
+}

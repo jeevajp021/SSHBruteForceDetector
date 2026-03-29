@@ -1,0 +1,2 @@
+alert_type,ip,attempt_count,unique_users,first_seen,severity
+USER_ENUMERATION,10.0.0.55,11,"['ubuntu', 'pi', 'test', 'ftp', 'nagios', 'admin', 'postgres', 'oracle', 'guest', 'root', 'hadoop']",2026-03-28 11:00:00,HIGH

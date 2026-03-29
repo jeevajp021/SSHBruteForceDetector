@@ -1,0 +1,2 @@
+alert_type,ip,count,window_secs,first_seen,severity
+BRUTE_FORCE_FAILED_PASSWORD,192.168.1.100,12,60,2026-03-28 10:00:00,HIGH

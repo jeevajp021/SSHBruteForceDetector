@@ -1,0 +1,60 @@
+project_name: "727823TUCY018_SSHBruteForceDetector"
+student_name: "Jeeva J P"
+roll_number:  "727823TUCY018"
+date:         "2026-03-28"
+description: >
+  Three-stage pipeline for the SSH Brute-Force Detector.
+  Stage 1 sets up the lab environment and generates synthetic logs.
+  Stage 2 runs the detector across all test cases and exports results.
+  Stage 3 analyses the combined results and builds an HTML report.
+
+environment:
+  python:     ">=3.7"
+  platform:   "Kali Linux / Ubuntu (VirtualBox VM)"
+  target_vm:  "Metasploitable2"
+
+stages:
+
+  - id: stage_1_setup
+    name: "Setup Lab Environment"
+    script: "code/setup_lab.py"
+    command: "python code/setup_lab.py"
+    outputs:
+      - outputs/logs/tc1_brute_force.log
+      - outputs/logs/tc2_user_enum.log
+      - outputs/logs/tc3_benign.log
+      - outputs/logs/tc4_distributed.log
+    on_failure: "abort"
+
+  - id: stage_2_run
+    name: "Run SSH Brute-Force Detector"
+    script: "code/run_tool.py"
+    command: "python code/run_tool.py"
+    depends_on: stage_1_setup
+    outputs:
+      - outputs/exports/tc1_results.json
+      - outputs/exports/tc2_results.json
+      - outputs/exports/tc3_results.json
+      - outputs/exports/tc4_results.json
+      - outputs/exports/all_results.json
+    on_failure: "continue_with_partial"
+
+  - id: stage_3_analyze
+    name: "Analyse Results and Generate Report"
+    script: "code/analyze_results.py"
+    command: "python code/analyze_results.py"
+    depends_on: stage_2_run
+    outputs:
+      - outputs/reports/analysis.json
+      - outputs/reports/report.html
+    on_failure: "abort"
+
+tools_used:
+  - Python 3.x
+  - reportlab
+  - VirtualBox
+  - Kali Linux
+  - Metasploitable2
+  - re (standard library)
+  - json (standard library)
+  - collections (standard library)

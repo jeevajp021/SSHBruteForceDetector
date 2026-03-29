@@ -1,0 +1,25 @@
+{
+  "summary": {
+    "roll_number": "727823TUCY018",
+    "timestamp": "2026-03-29T18:38:33.493388",
+    "total_events": 2,
+    "unique_attacker_ips": 1,
+    "alerts_raised": 0,
+    "legitimate_logins": 1
+  },
+  "alerts": [],
+  "events": [
+    {
+      "type": "FAILED",
+      "ip": "172.16.0.20",
+      "user": "alice",
+      "ts": "2026-03-28 14:00:00"
+    },
+    {
+      "type": "FAILED",
+      "ip": "172.16.0.20",
+      "user": "alice",
+      "ts": "2026-03-28 14:05:00"
+    }
+  ]
+}
